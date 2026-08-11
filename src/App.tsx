@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Sidebar } from './components/Sidebar'
 import { SortingPlayground } from './components/SortingPlayground'
 import { PlaceholderPlayground } from './components/PlaceholderPlayground'
+import { Footer } from './components/Footer'
 import { plannedByCategory, readyEntries } from './algorithms/registry'
 
 function App() {
@@ -37,7 +38,10 @@ function App() {
   return (
     <div className="app">
       <Sidebar activeId={activeId} onSelect={setActiveId} />
-      <main className="main">{content}</main>
+      <main className="main">
+        {content}
+        <Footer />
+      </main>
     </div>
   )
 }
