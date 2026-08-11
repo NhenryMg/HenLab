@@ -20,7 +20,9 @@ from the rendering.
 - **Quick Sort** — Lomuto partition around a highlighted pivot
 
 Each one reports live **Comparisons**, **Swaps/Writes**, real execution **Time** and a
-step counter, with annotations explaining what the algorithm is doing at every step.
+step counter, with annotations explaining what the algorithm is doing at every step,
+plus a syntax-highlighted **implementation panel** (Python / TypeScript) with a
+copy button for every algorithm.
 
 ### Pathfinding (scaffolded)
 

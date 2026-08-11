@@ -601,6 +601,102 @@ input[type='range']:focus-visible {
   max-width: 72ch;
 }
 
+/* ---------- Code block ---------- */
+
+.code-panel {
+  padding: 18px 20px;
+}
+
+.code-panel h2 {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+}
+
+.code-block {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.code-block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--bg-elev);
+}
+
+.code-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.code-tab {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.code-tab:hover {
+  color: var(--text-muted);
+}
+
+.code-tab.is-active {
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-color: rgba(255, 178, 36, 0.3);
+}
+
+.code-tab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.code-scroll {
+  overflow-x: auto;
+}
+
+.code-scroll pre {
+  margin: 0;
+  padding: 14px 16px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  tab-size: 2;
+}
+
+.code-line-number {
+  display: inline-block;
+  width: 2.4em;
+  margin-right: 1em;
+  text-align: right;
+  color: var(--text-faint);
+  user-select: none;
+}
+
+.btn-sm {
+  height: 28px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
 /* ---------- Placeholder ---------- */
 
 .placeholder-panel {

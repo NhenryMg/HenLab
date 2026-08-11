@@ -36,9 +36,15 @@ export interface AlgorithmMeta {
   status: 'ready' | 'planned'
 }
 
+export interface CodeExample {
+  python: string
+  typescript: string
+}
+
 export interface SortingEntry {
   meta: AlgorithmMeta
   run: SortGenerator
+  code: CodeExample
 }
 
 export interface PlannedEntry {

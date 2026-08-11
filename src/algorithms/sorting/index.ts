@@ -4,6 +4,7 @@ import { selectionSort } from './selection'
 import { insertionSort } from './insertion'
 import { mergeSort } from './merge'
 import { quickSort } from './quick'
+import { codeExamples } from './code'
 
 export const sortingEntries: SortingEntry[] = [
   {
@@ -18,6 +19,7 @@ export const sortingEntries: SortingEntry[] = [
       complexity: { best: 'O(n)', average: 'O(n²)', worst: 'O(n²)', space: 'O(1)' },
     },
     run: bubbleSort,
+    code: codeExamples.bubble,
   },
   {
     meta: {
@@ -31,6 +33,7 @@ export const sortingEntries: SortingEntry[] = [
       complexity: { best: 'O(n²)', average: 'O(n²)', worst: 'O(n²)', space: 'O(1)' },
     },
     run: selectionSort,
+    code: codeExamples.selection,
   },
   {
     meta: {
@@ -44,6 +47,7 @@ export const sortingEntries: SortingEntry[] = [
       complexity: { best: 'O(n)', average: 'O(n²)', worst: 'O(n²)', space: 'O(1)' },
     },
     run: insertionSort,
+    code: codeExamples.insertion,
   },
   {
     meta: {
@@ -57,6 +61,7 @@ export const sortingEntries: SortingEntry[] = [
       complexity: { best: 'O(n log n)', average: 'O(n log n)', worst: 'O(n log n)', space: 'O(n)' },
     },
     run: mergeSort,
+    code: codeExamples.merge,
   },
   {
     meta: {
@@ -70,5 +75,6 @@ export const sortingEntries: SortingEntry[] = [
       complexity: { best: 'O(n log n)', average: 'O(n log n)', worst: 'O(n²)', space: 'O(log n)' },
     },
     run: quickSort,
+    code: codeExamples.quick,
   },
 ]

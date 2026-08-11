@@ -3,6 +3,7 @@ import type { SortingEntry } from '../lib/types'
 import { randomArray, shuffle } from '../utils/array'
 import { usePlayback } from '../lib/usePlayback'
 import { BarChart } from './BarChart'
+import { CodeBlock } from './CodeBlock'
 import { ControlDeck } from './ControlDeck'
 import { StatPanel } from './StatPanel'
 
@@ -138,6 +139,11 @@ export function SortingPlayground({ entry }: SortingPlaygroundProps) {
       <section className="panel desc-panel">
         <h2>How it works</h2>
         <p>{meta.description}</p>
+      </section>
+
+      <section className="panel code-panel">
+        <h2>Implementation</h2>
+        <CodeBlock sources={entry.code} />
       </section>
     </div>
   )
